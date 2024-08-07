@@ -1,9 +1,9 @@
-# 🚀 Password Generator Extension
+# 🚀 EasyPass Generator
 
-![GitHub issues](https://img.shields.io/github/issues/yourusername/password-generator-extension)
-![GitHub stars](https://img.shields.io/github/stars/yourusername/password-generator-extension)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/password-generator-extension)
-![GitHub license](https://img.shields.io/github/license/yourusername/password-generator-extension)
+![GitHub issues](https://img.shields.io/github/issues/B3rK-3/EasyPass-Generator)
+![GitHub stars](https://img.shields.io/github/stars/B3rK-3/EasyPass-Generator)
+![GitHub forks](https://img.shields.io/github/forks/B3rK-3/EasyPass-Generator)
+![GitHub license](https://img.shields.io/github/license/B3rK-3/EasyPass-Generator)
 
 A simple and secure password generator extension for your browser. This extension helps you create strong, random passwords to enhance your online security. Easily generate passwords with custom lengths, character sets, and exclusions directly from your browser's context menu.
 
@@ -30,7 +30,7 @@ A simple and secure password generator extension for your browser. This extensio
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/password-generator-extension.git
+   git clone https://github.com/B3rK-3/EasyPass-Generator.git
    cd password-generator-extension
    ```
 
@@ -79,7 +79,7 @@ To contribute to the development of this extension:
 
 2. **Clone your fork:**
    ```bash
-   git clone https://github.com/yourusername/password-generator-extension.git
+   git clone https://github.com/B3rK-3/EasyPass-Generator.git
    cd password-generator-extension
    ```
 
