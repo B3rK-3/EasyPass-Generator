@@ -9,13 +9,13 @@ A simple and secure password generator extension for your browser. This extensio
 
 ## 📜 Table of Contents
 
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Options](#options)
-- [Development](#development)
-- [Contributing](#contributing)
-- [License](#license)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Options](#-options)
+- [Development](#-development)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## ✨ Features
 
