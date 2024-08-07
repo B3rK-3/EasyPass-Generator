@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="/dist/script.js"></script>
+    <script src="/dist/bg.js"></script>
+</head>
+
+<body class="w-[230px] h-[260px] bg-gray-800">
+    <div class="rs bg-gray-600 text-white">
+        <p class="flex justify-center font-semibold text-[17px]">
+            <span class="py-1">EasyPass Gen</span>
+        </p>
+    </div>
+    <div class="flex justify-center">
+        <div class="flex mt-[-2px] border-b-2 h-[0.1px] border-gray-300 w-[80%] rounded"></div>
+    </div>
+    <div class="mt-2 rs text-white">
+        <p class="text-white text-[15px] ml-[15px] flex">Length:
+            <input type="text" id="lenVal" name="value" placeholder="Click to change"
+                class="bg-transparent ml-1 w-[112px] outline-0 border-[1.5px] border-gray-600 focus:border-[1.5px] focus:border-gray-600 rounded mt-[-1px]">
+        </p>
+        <div class="flex justify-center mt-[5px]">
+            <input type="range" min="4" max="52" value="8" class="slider w-[200px]" id="passLen">
+        </div>
+        <div class="grid grid-cols-2 text-[13px] ml-[15px] mt-3 gap-y-1">
+            <div class="flex"><input type="checkbox" class="mr-1 hover:cursor-pointer" id="upper">
+                <p>Uppercases</p>
+            </div>
+            <div class="flex"><input type="checkbox" class="mr-1 hover:cursor-pointer" id="langs">
+                <p title="Ex: àäèéëïĳöü ">Languages</p>
+            </div>
+            <div class="flex"><input type="checkbox" class="mr-1 hover:cursor-pointer" id="nums">
+                <p>Numbers</p>
+            </div>
+            <div class="flex"><input type="checkbox" class="mr-1 hover:cursor-pointer" id="chars">
+                <p title="Ex: !@#$%">Spec. Chars</p>
+            </div>
+        </div>
+        <p class="text-[14px] ml-[15px] mt-3 flex">Don't Include:<input type="text" placeholder="Ex: #$%"
+                class="bg-transparent w-[100px] ml-1 outline-0 border-[1.5px] border-transparent focus:border-[1.5px] focus:border-gray-500 rounded mt-[-1px]"
+                id="noInc"></p>
+        <div class="flex justify-center mt-3">
+            <button id="genPass" type="button"
+                class="text-[15px] border-[2px] border-gray-600 px-1 py-[0.5px] rounded bg-gray-500 hover:bg-gray-600 transition-all">Generate
+                Password</button>
+        </div>
+        <div class="text-[14px] mt-3 flex justify-center">
+            <p>Password:<input id="pass"
+                    class="w-[100px] bg-transparent [1px] outline-0 border-[1px] border-gray-500 rounded align-center ml-1 overflow-scroll no-scrollbar hover:cursor-pointer"
+                    type="text" readonly>
+            </p>
+            <div class="fixed bottom-[30px] flex justify-center align-middle bg-gray-700 rounded px-[2px] goaway w-[95px] ml-[74px]" id="clickToC">
+                <div class="noselect">
+                    Click to copy!
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
