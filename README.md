@@ -3,7 +3,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/B3rK-3/EasyPass-Generator)
 ![GitHub stars](https://img.shields.io/github/stars/B3rK-3/EasyPass-Generator)
 ![GitHub forks](https://img.shields.io/github/forks/B3rK-3/EasyPass-Generator)
-![GitHub license](https://img.shields.io/github/license/B3rK-3/EasyPass-Generator)
+![GitHub license](https://img.shields.io/github/license/B3rK-3/EasyPass-Genrator)
 
 A simple and secure password generator extension for your browser. This extension helps you create strong, random passwords to enhance your online security. Easily generate passwords with custom lengths, character sets, and exclusions directly from your browser's context menu.
 
