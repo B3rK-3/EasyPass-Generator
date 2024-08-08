@@ -5,14 +5,13 @@
   "description": "Easy Password Generator",
   "permissions": [
     "contextMenus",
-    "notifications",
     "storage",
-    "scripting"
+    "scripting",
+    "activeTab"
   ],
   "background": {
     "service_worker": "./dist/bg.js"
   },
-  "host_permissions": [ "*://*/*" ],
   "content_scripts": [
     {
       "matches": [

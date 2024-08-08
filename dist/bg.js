@@ -15,7 +15,14 @@ chrome.runtime.onInstalled.addListener(() => {
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
     if (info.menuItemId === "generate-password") {
-        chrome.storage.sync.get(['passLen', 'upper', 'nums', 'char', 'langs', 'noInc'], (items) => {
+        chrome.storage.sync.get({
+            passLen: 8,
+            upper: false,
+            nums: false,
+            char: false,
+            langs: false,
+            noInc: ' '
+        }, (items) => {
             chrome.scripting.executeScript({
                 target: { tabId: tab.id },
                 func: (uppercases, lowercases, chars, languages, numbers, lenPass, upper, nums, char, langs, noIncStr) => {
@@ -57,16 +64,8 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
                     const password = genPassword(upper, nums, char, langs, lenPass, noInc);
                     const el = document.activeElement;
-                    if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA')) {
-                        const [start, end] = [el.selectionStart, el.selectionEnd];
-                        if (typeof el.setRangeText === 'function') {
-                            el.setRangeText(password, start, end, 'select');
-                        } else {
-                            const value = el.value;
-                            el.value = value.slice(0, start) + password + value.slice(end);
-                            el.setSelectionRange(start + password.length, start + password.length);
-                        }
-                    }
+                    document.execCommand('insertText', false, password);
+                    el.dispatchEvent(new Event('change', {bubbles: true}));
                 },
                 args: [
                     uppercases, lowercases, chars, languages, numbers,

@@ -54,12 +54,12 @@ function saveOptions() {
 
 function loadOptions() {
     chrome.storage.sync.get({
-        passLen: '8',
+        passLen: 8,
         upper: false,
         nums: false,
         char: false,
         langs: false,
-        noInc: ''
+        noInc: ' '
     }, function (items) {
         document.getElementById('passLen').value = items.passLen;
         document.getElementById('upper').checked = items.upper;
